@@ -26,7 +26,7 @@ public class Operators {
         }
 
         int topScore = 100;
-        if (topScore < 101)
+        if (topScore < 102)
         {
             System.out.println("I am the topper!");
         }
