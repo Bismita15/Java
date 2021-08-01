@@ -1,3 +1,5 @@
+import java.sql.SQLOutput;
+
 public class Operators {
     public static void main(String[] args) {
         int result = 3 + 1; // 3 + 1 = 4
@@ -32,9 +34,26 @@ public class Operators {
         }
 
         int secondTopScore = 87;
-        if (topScore > secondTopScore && topScore < 102) { // before && and after && the value should match and should be true
+        if ((topScore > secondTopScore) && (topScore < 102)) {
+            // before && and after && the value should match and should be true
             System.out.println("Greater than top score and less than 100");
         }
 
+        int thirdTopScore = 94;
+        if ((topScore > thirdTopScore) || (secondTopScore < 102)) {
+            // before || (Logical OR) and after || the value should match and should be true
+            System.out.println("Code will print else it will not.");
+        }
+        int randomValue = 50;
+        if (randomValue == 50) {
+            // Always use double == in the if condition else it will give error or will not print anything in the code block.
+            System.out.println("This will print!");
+        }
+
+        boolean car = false;
+        if (!car) {
+            //the boolean value should match with the if statement
+            System.out.println("This will not print!");
+        }
     }
 }
